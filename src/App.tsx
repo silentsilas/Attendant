@@ -48,7 +48,7 @@ function App() {
         <input type="text" name="testInput2" style={{ width: "100%" }} />
         <Spacer />
         <SpaceBetweenContainer>
-          <Button variant="secondary" onClick={() => {}}>
+          <Button variant="primary" onClick={() => {}}>
             Hello World
           </Button>
           <Button variant="secondary" onClick={() => {}}>

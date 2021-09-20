@@ -1,6 +1,7 @@
 import React, { FC, ReactNode } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import CSS from "csstype";
+import { darken } from "polished";
 
 import { color, typography } from "../shared/styles";
 
@@ -41,12 +42,29 @@ const StyledButton = styled.button<ButtonProps>`
   transition: all 150ms ease-out;
   transform: translate3d(0, 0, 0);
 
-  color: ${(props) =>
-    props.variant === "primary" ? color.white : color.black};
-  background-color: ${(props) =>
-    props.variant === "primary" ? color.primary : color.secondary};
-
   &:hover {
     transform: translateY(-2px);
   }
+
+  ${(props) =>
+    props.variant === "primary" &&
+    css`
+      color: ${color.white};
+      background-color: ${color.primary};
+
+      &:hover {
+        background-color: ${darken(0.05, color.primary)};
+      }
+    `}
+
+  ${(props) =>
+    props.variant === "secondary" &&
+    css`
+      color: ${color.black};
+      background-color: ${color.secondary};
+
+      &:hover {
+        background-color: ${darken(0.1, color.secondary)};
+      }
+    `}
 `;

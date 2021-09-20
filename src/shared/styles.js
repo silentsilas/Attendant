@@ -23,4 +23,6 @@ export const typography = {
 
 export const input = {
   padding: "2rem",
+  borderRadius: "12px",
+  fontSize: "1.6rem",
 };

@@ -45,12 +45,12 @@ const Input: FC<InputProps> = ({
 export default Input;
 
 const StyledInput = styled.input<InputProps>`
-  border-radius: 12px;
+  border-radius: ${input.borderRadius};
   border: none;
   padding: ${input.padding};
   width: 100%;
 
-  font-size: 1.6rem;
+  font-size: ${input.fontSize};
   font-family: ${typography.primary};
   font-weight: ${typography.weight.regular};
 
