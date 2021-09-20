@@ -11,7 +11,7 @@ interface SpaceBetweenContainerProps {
 const SpaceBetweenContainer: FC<SpaceBetweenContainerProps> = ({
   children,
   style,
-  width100pct,
+  width100pct = true,
 }) => {
   return (
     <StyledDiv style={style} width100pct={width100pct}>
