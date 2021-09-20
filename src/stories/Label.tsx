@@ -22,7 +22,7 @@ export default Label;
 
 const StyledLabel = styled.label<LabelProps>`
   font-size: 1.4rem;
-  font-family: ${typography.regular};
+  font-family: ${typography.primary};
   font-weight: ${typography.weight.heavy};
 
   margin-bottom: 0.7rem;

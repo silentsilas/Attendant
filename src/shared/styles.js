@@ -6,12 +6,21 @@ export const color = {
   background: "#091132",
 };
 
+export const opacity = {
+  light: 0.1,
+  medium: 0.2,
+};
+
 export const typography = {
   heading: "'IBM Plex Mono', monospace",
-  regular: "'Roboto', sans-serif",
+  primary: "'Roboto', sans-serif",
   weight: {
     regular: 400,
     heavy: 500,
     bold: 700,
   },
+};
+
+export const input = {
+  padding: "2rem",
 };

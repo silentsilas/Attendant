@@ -5,14 +5,20 @@ import CSS from "csstype";
 import { color, typography } from "../shared/styles";
 
 export interface ButtonProps {
-  variant?: "primary" | "secondary";
   children: ReactNode | null;
   style?: CSS.Properties;
+  variant?: "primary" | "secondary";
+  onClick: () => void;
 }
 
-const Button: FC<ButtonProps> = ({ children, variant = "primary", style }) => {
+const Button: FC<ButtonProps> = ({
+  children,
+  style,
+  variant = "primary",
+  onClick,
+}) => {
   return (
-    <StyledButton variant={variant} style={style}>
+    <StyledButton variant={variant} style={style} onClick={onClick}>
       {children}
     </StyledButton>
   );
@@ -29,7 +35,7 @@ const StyledButton = styled.button<ButtonProps>`
   min-width: 10rem;
 
   font-size: 1.4rem;
-  font-family: ${typography.regular};
+  font-family: ${typography.primary};
   font-weight: ${typography.weight.heavy};
 
   transition: all 150ms ease-out;
