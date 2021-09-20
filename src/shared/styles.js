@@ -3,6 +3,7 @@ export const color = {
   secondary: "#32EFE7",
   white: "#FFFFFF",
   black: "#000000",
+  background: "#091132",
 };
 
 export const typography = {
