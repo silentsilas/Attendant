@@ -3,7 +3,14 @@ import styled, { css } from "styled-components";
 import CSS from "csstype";
 import { rgba } from "polished";
 
-import { color, opacity, typography, input } from "../shared/styles";
+import {
+  color,
+  opacity,
+  typography,
+  borderRadius,
+  fontSize,
+  padding,
+} from "../shared/styles";
 
 export interface InputProps {
   style?: CSS.Properties;
@@ -45,12 +52,12 @@ const Input: FC<InputProps> = ({
 export default Input;
 
 const StyledInput = styled.input<InputProps>`
-  border-radius: ${input.borderRadius};
+  border-radius: ${borderRadius.medium};
   border: none;
-  padding: ${input.padding};
+  padding: ${padding.medium};
   width: 100%;
 
-  font-size: ${input.fontSize};
+  font-size: ${fontSize.medium};
   font-family: ${typography.primary};
   font-weight: ${typography.weight.regular};
 
@@ -63,8 +70,8 @@ const StyledInput = styled.input<InputProps>`
     (props.variant === "disabled-light" ||
       props.variant === "disabled-medium") &&
     css`
-      color: ${color.white};
       cursor: not-allowed;
+      color: ${color.white};
 
       &::placeholder {
         color: ${color.white};

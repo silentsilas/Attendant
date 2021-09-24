@@ -21,8 +21,14 @@ export const typography = {
   },
 };
 
-export const input = {
-  padding: "2rem",
-  borderRadius: "12px",
-  fontSize: "1.6rem",
+export const padding = {
+  medium: "2rem",
+};
+
+export const borderRadius = {
+  medium: "12px",
+};
+
+export const fontSize = {
+  medium: "1.6rem",
 };
