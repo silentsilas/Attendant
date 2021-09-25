@@ -6,12 +6,12 @@ import Header1 from "./stories/Header1";
 import Header2 from "./stories/Header2";
 
 import Button from "./stories/Button";
+import IconArrow from "./stories/IconArrow";
 import InputButtonWithIcon from "./stories/InputButtonWithIcon";
 
 import Label from "./stories/Label";
 import Input from "./stories/Input";
-import FileInput from "./stories/FileInput";
-import TextArea from "./stories/TextArea";
+import AutoResizingTextArea from "./stories/AutoResizingTextArea";
 import Select from "./stories/Select";
 
 import CenteredContainer from "./stories/utilities/CenteredContainer";
@@ -39,7 +39,7 @@ function App() {
   return (
     <CenteredContainer fullscreen>
       <CenteredContainer>
-        <ProgressIndicator current={3} />
+        <ProgressIndicator currentProgress={3} />
         {/* <Header1>Securely Share Your Secrets</Header1> */}
         <Spacer />
         <Header2>Tell someone</Header2>
@@ -48,8 +48,8 @@ function App() {
           <Label htmlFor="testInput">Testing label</Label>
         </TextAlignWrapper>
         <Input
-          variant="disabled-light"
-          name="testInput"
+          variant="primary"
+          id="testInput"
           value={input1}
           onChange={handleInputChange1}
           placeholder="testing 1 2 3"
@@ -62,10 +62,8 @@ function App() {
           onClick={() => {}}
         />
         <Spacer />
-        <FileInput id="fileInput" />
-        <Spacer />
         <Select
-          name="selectService"
+          id="selectService"
           value={select}
           onChange={handleSelectChange}
         />
@@ -74,20 +72,19 @@ function App() {
           <Label htmlFor="testInput2">Testing label left</Label>
           <Label htmlFor="testInput2">Testing label right</Label>
         </SpaceBetweenContainer>
-        <TextArea
-          name="testTextArea"
+        <AutoResizingTextArea
+          id="testTextArea"
           value={input2}
           onChange={handleInputChange2}
           placeholder="Tell me your secrets"
-          disabled
         />
         <Spacer />
         <SpaceBetweenContainer>
           <Button variant="primary" onClick={() => {}}>
-            Hello World
+            <IconArrow arrowDirection="left" />
           </Button>
           <Button variant="secondary" onClick={() => {}}>
-            Hello World
+            <IconArrow arrowDirection="right" />
           </Button>
         </SpaceBetweenContainer>
       </CenteredContainer>

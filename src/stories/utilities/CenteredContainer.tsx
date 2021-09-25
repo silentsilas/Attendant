@@ -39,7 +39,7 @@ const StyledDiv = styled.div<CenteredContainerProps>`
     props.fullscreen &&
     css`
       width: 100vw;
-      background-color: ${color.background};
+      background: linear-gradient(180deg, #060b2e 0%, #051745 100%);
     `}
 
   ${(props) =>

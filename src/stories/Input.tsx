@@ -8,24 +8,23 @@ import {
   opacity,
   typography,
   borderRadius,
-  fontSize,
   padding,
+  outline,
 } from "../shared/styles";
 
 export interface InputProps {
   style?: CSS.Properties;
   variant?: "primary" | "disabled-light" | "disabled-medium";
-  name: string;
+  id: string;
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
-  // disabled = false,
 }
 
 const Input: FC<InputProps> = ({
   style,
   variant = "primary",
-  name,
+  id,
   value,
   onChange,
   placeholder = "",
@@ -39,7 +38,7 @@ const Input: FC<InputProps> = ({
     <StyledInput
       style={style}
       variant={variant}
-      name={name}
+      id={id}
       value={value}
       onChange={onChange}
       placeholder={placeholder}
@@ -56,14 +55,21 @@ const StyledInput = styled.input<InputProps>`
   border: none;
   padding: ${padding.medium};
   width: 100%;
+  height: 6rem;
 
-  font-size: ${fontSize.medium};
-  font-family: ${typography.primary};
+  color: ${color.darkblue};
+  font-size: ${typography.size.medium};
+  font-family: ${typography.family.primary};
   font-weight: ${typography.weight.regular};
 
+  &::placeholder {
+    color: ${color.darkblue};
+  }
+
   appearance: none;
+  &:focus,
   &:focus-visible {
-    outline: none;
+    outline: ${outline.regular};
   }
 
   ${(props) =>

@@ -6,7 +6,17 @@ export const decorators = [
   (Story) => (
     <>
       <GlobalStyle />
-      <Story />
+      <div
+        style={{
+          padding: "20px",
+          background: "linear-gradient(180deg, #060b2e 0%, #051745 100%)",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Story />
+      </div>
     </>
   ),
 ];

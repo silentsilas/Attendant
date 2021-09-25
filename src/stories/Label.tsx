@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from "react";
 import styled from "styled-components";
 import CSS from "csstype";
 
-import { typography } from "../shared/styles";
+import { typography, color } from "../shared/styles";
 
 export interface LabelProps {
   children: ReactNode | null;
@@ -21,8 +21,9 @@ const Label: FC<LabelProps> = ({ children, style, htmlFor }) => {
 export default Label;
 
 const StyledLabel = styled.label<LabelProps>`
-  font-size: 1.4rem;
-  font-family: ${typography.primary};
+  color: ${color.white};
+  font-size: ${typography.size.small};
+  font-family: ${typography.family.primary};
   font-weight: ${typography.weight.heavy};
 
   margin-bottom: 0.7rem;

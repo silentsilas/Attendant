@@ -17,7 +17,7 @@ export default Header2;
 
 const StyledHeader2 = styled.h2<Header2Props>`
   font-size: 3.2rem;
-  font-family: ${typography.heading};
+  font-family: ${typography.family.heading};
   font-weight: ${typography.weight.regular};
 
   color: ${color.white};

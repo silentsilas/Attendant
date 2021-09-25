@@ -1,12 +1,12 @@
 import React from "react";
 
-interface ProgressIndicatorProps {
-  current: 1 | 2 | 3;
+export interface ProgressIndicatorProps {
+  currentProgress: 1 | 2 | 3;
   size?: string;
 }
 
 const ProgressIndicator = ({
-  current,
+  currentProgress,
   size = "148",
 }: ProgressIndicatorProps) => {
   const color = "#6B6B6B";
@@ -15,7 +15,8 @@ const ProgressIndicator = ({
   const cx2 = 72;
   const cx3 = 132;
 
-  const currentCircleCX = current === 1 ? cx1 : current === 2 ? cx2 : cx3;
+  const currentCircleCX =
+    currentProgress === 1 ? cx1 : currentProgress === 2 ? cx2 : cx3;
 
   return (
     <div>

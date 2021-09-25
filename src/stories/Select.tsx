@@ -1,19 +1,25 @@
 import React, { FC } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import CSS from "csstype";
 
-import { typography, borderRadius, fontSize, padding } from "../shared/styles";
+import {
+  color,
+  typography,
+  borderRadius,
+  padding,
+  outline,
+} from "../shared/styles";
 
 export interface SelectProps {
   style?: CSS.Properties;
-  name: string;
-  value: string;
+  id: string;
+  value?: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-const Select: FC<SelectProps> = ({ style, name, value, onChange }) => {
+const Select: FC<SelectProps> = ({ style, id, value = "github", onChange }) => {
   return (
-    <StyledSelect style={style} name={name} value={value} onChange={onChange}>
+    <StyledSelect style={style} id={id} value={value} onChange={onChange}>
       <option value="github">Github</option>
       <option value="facebook">Facebook</option>
       <option value="Google">Google</option>
@@ -24,12 +30,16 @@ const Select: FC<SelectProps> = ({ style, name, value, onChange }) => {
 export default Select;
 
 const StyledSelect = styled.select<SelectProps>`
-  font-size: ${fontSize.medium};
-  font-family: ${typography.primary};
+  color: ${color.darkblue};
+  font-size: ${typography.size.medium};
+  font-family: ${typography.family.primary};
   font-weight: ${typography.weight.regular};
 
   padding: ${padding.medium};
   width: 100%;
+  height: 6rem;
+
+  cursor: pointer;
 
   border: none;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
@@ -41,32 +51,12 @@ const StyledSelect = styled.select<SelectProps>`
   background-repeat: no-repeat, repeat;
   /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
   /* background-position: right 1.2rem top 50%, 0 0 */
-  background-position: right 1.4rem top 50%;
+  background-position: right 1.9rem top 50%;
   /* icon size, then gradient */
-  /* background-size: 3rem auto, 100%; */
   background-size: 2rem auto;
 
+  &:focus,
   &:focus-visible {
-    outline: none;
+    outline: ${outline.regular};
   }
 `;
-
-/* 
-const StyledSelect = styled.select<SelectProps>`
-  border-radius: ${borderRadius.medium};
-  border: none;
-  padding: ${padding.medium};
-  width: 100%;
-  margin: 0.7rem auto;
-
-  font-size: ${fontSize.medium};
-  font-family: ${typography.primary};
-  font-weight: ${typography.weight.regular};
-
-  cursor: pointer;
-
-  &:focus-visible {
-    outline: none;
-  }
-`;
- */

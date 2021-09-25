@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import React, { FC } from "react";
 import styled, { css } from "styled-components";
 import CSS from "csstype";
 import { rgba } from "polished";
@@ -9,14 +9,14 @@ import {
   padding,
   borderRadius,
   typography,
-  fontSize,
   opacity,
+  outline,
 } from "../shared/styles";
 
 export interface InputButtonWithIconProps {
   style?: CSS.Properties;
   id: string;
-  variant: "copy" | "download";
+  variant: "copy" | "download" | "fileinput";
   value: string;
   onClick: () => void;
 }
@@ -36,6 +36,7 @@ const InputButtonWithIcon: FC<InputButtonWithIconProps> = ({
         variant={variant}
         value={value}
         onClick={onClick}
+        type="button"
       />
 
       <Icon iconName={variant} onClick={onClick} />
@@ -48,6 +49,7 @@ export default InputButtonWithIcon;
 const StyledDiv = styled.div`
   position: relative;
   width: 100%;
+  height: 6rem;
 `;
 
 const StyledInput = styled.input<InputButtonWithIconProps>`
@@ -58,24 +60,38 @@ const StyledInput = styled.input<InputButtonWithIconProps>`
   padding: ${padding.medium};
   padding-right: 6rem;
   width: 100%;
+  height: 6rem;
   overflow: hidden;
 
-  font-size: ${fontSize.medium};
-  font-family: ${typography.primary};
-  font-weight: ${typography.weight.heavy};
+  font-size: ${typography.size.medium};
+  font-family: ${typography.family.primary};
+  font-weight: ${typography.weight.regular};
   text-align: left;
+
+  &:focus,
+  &:focus-visible {
+    outline: ${outline.regular};
+  }
 
   ${(props) =>
     props.variant === "copy" &&
     css`
       background-color: ${color.white};
-      color: ${color.black};
+      color: ${color.darkblue};
     `}
 
   ${(props) =>
     props.variant === "download" &&
     css`
-      background-color: ${rgba(color.white, opacity.medium)};
+      background-color: ${rgba(color.white, opacity.dark)};
       color: ${color.white};
+    `}
+
+    ${(props) =>
+    props.variant === "fileinput" &&
+    css`
+      background-color: ${color.white};
+      color: ${color.darkblue};
+      border: 2px dashed ${rgba(color.darkblue, opacity.medium)};
     `}
 `;

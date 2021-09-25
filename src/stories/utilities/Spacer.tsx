@@ -7,7 +7,7 @@ interface SpacerProps {
   space?: string;
 }
 
-const Spacer: FC<SpacerProps> = ({ style, space = "20px" }) => {
+const Spacer: FC<SpacerProps> = ({ style, space = "2rem" }) => {
   return <StyledDiv style={style} space={space} />;
 };
 

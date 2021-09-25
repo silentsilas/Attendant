@@ -16,9 +16,10 @@ const Header1: FC<Header1Props> = ({ children, style }) => {
 export default Header1;
 
 const StyledHeader1 = styled.h2<Header1Props>`
-  font-size: 6.4rem;
-  font-family: ${typography.heading};
-  font-weight: ${typography.weight.regular};
+  margin: 0.7rem auto;
 
   color: ${color.white};
+  font-size: 6.4rem;
+  font-family: ${typography.family.heading};
+  font-weight: ${typography.weight.regular};
 `;

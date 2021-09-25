@@ -1,21 +1,18 @@
 import React, { FC } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import CSS from "csstype";
-import { rgba } from "polished";
 
 import {
   color,
-  opacity,
   typography,
   borderRadius,
-  fontSize,
+  outline,
   padding,
 } from "../shared/styles";
 
 export interface TextAreaProps {
   style?: CSS.Properties;
-  disabled?: boolean;
-  name: string;
+  id: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   placeholder?: string;
@@ -23,19 +20,17 @@ export interface TextAreaProps {
 
 const TextArea: FC<TextAreaProps> = ({
   style,
-  name,
+  id,
   value,
   onChange,
-  disabled = false,
   placeholder = "",
 }) => {
   return (
     <StyledTextArea
       style={style}
-      name={name}
+      id={id}
       value={value}
       onChange={onChange}
-      disabled={disabled}
       placeholder={placeholder}
     />
   );
@@ -50,31 +45,17 @@ const StyledTextArea = styled.textarea<TextAreaProps>`
   width: 100%;
   height: 21.6rem;
 
-  font-size: ${fontSize.medium};
-  font-family: ${typography.primary};
+  color: ${color.darkblue};
+  font-size: ${typography.size.medium};
+  font-family: ${typography.family.primary};
   font-weight: ${typography.weight.regular};
 
   appearance: none;
   &:focus-visible {
-    outline: none;
+    outline: ${outline.regular};
   }
 
   &::placeholder {
-    color: ${color.black};
+    color: ${color.darkblue};
   }
-
-  ${(props) =>
-    props.disabled &&
-    css`
-      cursor: not-allowed;
-      height: 0;
-      min-height: 12.5rem;
-
-      color: white;
-      background-color: ${rgba(color.white, opacity.medium)};
-
-      &::placeholder {
-        color: ${color.white};
-      }
-    `}
 `;

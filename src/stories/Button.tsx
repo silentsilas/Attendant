@@ -1,14 +1,16 @@
 import React, { FC, ReactNode } from "react";
 import styled, { css } from "styled-components";
 import CSS from "csstype";
-import { darken } from "polished";
+import { darken, lighten } from "polished";
 
-import { color, typography } from "../shared/styles";
+import { borderRadius, color, typography } from "../shared/styles";
 
 export interface ButtonProps {
   children: ReactNode | null;
   style?: CSS.Properties;
   variant?: "primary" | "secondary";
+  boldFont?: boolean;
+  wide?: boolean;
   onClick: () => void;
 }
 
@@ -16,10 +18,18 @@ const Button: FC<ButtonProps> = ({
   children,
   style,
   variant = "primary",
+  boldFont = false,
+  wide = false,
   onClick,
 }) => {
   return (
-    <StyledButton variant={variant} style={style} onClick={onClick}>
+    <StyledButton
+      variant={variant}
+      boldFont={boldFont}
+      wide={wide}
+      style={style}
+      onClick={onClick}
+    >
       {children}
     </StyledButton>
   );
@@ -29,21 +39,28 @@ export default Button;
 
 const StyledButton = styled.button<ButtonProps>`
   border: 0;
-  border-radius: 25px;
+  border-radius: ${borderRadius.large};
   cursor: pointer;
 
-  padding: 1rem 2rem;
-  min-width: 10rem;
+  padding: 1rem 3rem;
+  height: 5rem;
+  min-width: ${(props) => (props.wide ? "18rem" : "8rem")};
 
-  font-size: 1.4rem;
-  font-family: ${typography.primary};
-  font-weight: ${typography.weight.heavy};
+  font-size: ${typography.size.small};
+  font-family: ${typography.family.primary};
+  font-weight: ${(props) =>
+    props.boldFont ? typography.weight.bold : typography.weight.heavy};
 
   transition: all 150ms ease-out;
   transform: translate3d(0, 0, 0);
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 
   ${(props) =>
@@ -60,11 +77,11 @@ const StyledButton = styled.button<ButtonProps>`
   ${(props) =>
     props.variant === "secondary" &&
     css`
-      color: ${color.black};
+      color: ${color.darkblue};
       background-color: ${color.secondary};
 
       &:hover {
-        background-color: ${darken(0.1, color.secondary)};
+        background-color: ${lighten(0.1, color.secondary)};
       }
     `}
 `;
