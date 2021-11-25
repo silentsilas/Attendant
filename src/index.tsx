@@ -1,26 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { GlobalStyle } from "../src/shared/global";
-import App from "./App";
-import App2 from "./App2";
-import SplashPage from "./SplashPage";
-import SecretCreationPage1 from "./SecretCreationPage1";
-import SecretCreationPage2 from "./SecretCreationPage2";
-import SecretCreationPage3 from "./SecretCreationPage3";
-import VerifyPage from "./VerifyPage";
-import SecretRevealPage from "./SecretRevealPage";
+import * as styles from './shared/styles';
+import * as global from './shared/global';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <GlobalStyle />
-    {/* <App /> */}
-    {/* <App2 /> */}
-    {/* <SplashPage /> */}
-    {/* <SecretCreationPage1 /> */}
-    {/* <SecretCreationPage2 /> */}
-    {/* <SecretCreationPage3 /> */}
-    {/* <VerifyPage /> */}
-    <SecretRevealPage />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+export { styles, global };
+
+export * from './stories/AutoResizingTextArea';
+export * from './stories/Button';
+export * from './stories/FileInput';
+export * from './stories/Header1';
+export * from './stories/Header2';
+export * from './stories/Header3';
+export * from './stories/Icon';
+export * from './stories/Input';
+export * from './stories/InputButtonWithIcon';
+export * from './stories/Label';
+export * from './stories/ProgressIndicator';
+export * from './stories/Select';
+export * from './stories/SplashIconHeader';
+export * from './stories/TextArea';
+export * from './stories/TextAreaParagraph';
+export * from './stories/utilities/CenteredContainer';
+export * from './stories/utilities/SpaceBetweenContainer';
+export * from './stories/utilities/Spacer';
+export * from './stories/utilities/TextAlignWrapper';
