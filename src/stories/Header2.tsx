@@ -13,7 +13,7 @@ const Header2: FC<Header2Props> = ({ children, style }) => {
   return <StyledHeader2 style={style}>{children}</StyledHeader2>;
 };
 
-export default Header2;
+export { Header2 };
 
 const StyledHeader2 = styled.h2<Header2Props>`
   font-size: 3.2rem;

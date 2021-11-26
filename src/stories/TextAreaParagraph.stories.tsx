@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { TextAreaParagraphProps } from "./TextAreaParagraph";
 
-import TextAreaParagraph from "./TextAreaParagraph";
+import { TextAreaParagraph } from "./TextAreaParagraph";
 
 export default {
   title: "TextAreas/TextAreaParagraph",

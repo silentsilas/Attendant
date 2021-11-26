@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { LabelProps } from "./Label";
 
-import Label from "./Label";
+import { Label } from "./Label";
 
 export default {
   title: "Label",

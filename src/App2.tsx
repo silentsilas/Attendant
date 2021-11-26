@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import SplashIconHeader from "./stories/SplashIconHeader";
+import { SplashIconHeader } from "./stories/SplashIconHeader";
 
 function App2() {
   return (

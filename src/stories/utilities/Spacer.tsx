@@ -11,7 +11,7 @@ const Spacer: FC<SpacerProps> = ({ style, space = "2rem" }) => {
   return <StyledDiv style={style} space={space} />;
 };
 
-export default Spacer;
+export { Spacer };
 
 const StyledDiv = styled.div<SpacerProps>`
   height: ${(props) => props.space};

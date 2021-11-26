@@ -27,7 +27,7 @@ const Select: FC<SelectProps> = ({ style, id, value = "github", onChange }) => {
   );
 };
 
-export default Select;
+export { Select };
 
 const StyledSelect = styled.select<SelectProps>`
   color: ${color.darkblue};

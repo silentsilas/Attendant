@@ -37,7 +37,7 @@ const TextAreaParagraph: React.FC<TextAreaParagraphProps> = ({
   );
 };
 
-export default TextAreaParagraph;
+export { TextAreaParagraph };
 
 const StyledParagraph = styled.p<TextAreaParagraphProps>`
   border-radius: ${borderRadius.medium};

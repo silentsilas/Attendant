@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { FileInputProps } from "./FileInput";
 
-import FileInput from "./FileInput";
+import { FileInput } from "./FileInput";
 
 export default {
   title: "FileInput",
