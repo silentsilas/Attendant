@@ -1,16 +1,16 @@
 import React from "react";
 
-import { Header2 } from "./stories/Header2";
-import { Header3 } from "./stories/Header3";
+import { Header2 } from"../Header2";
+import { Header3 } from"../Header3";
 
-import { Button } from "./stories/Button";
+import { Button } from"../Button";
 
-import { Label } from "./stories/Label";
-import { Input } from "./stories/Input";
+import { Label } from"../Label";
+import { Input } from"../Input";
 
-import { CenteredContainer } from "./stories/utilities/CenteredContainer";
-import { Spacer } from "./stories/utilities/Spacer";
-import { TextAlignWrapper } from "./stories/utilities/TextAlignWrapper";
+import { CenteredContainer } from"../utilities/CenteredContainer";
+import { Spacer } from"../utilities/Spacer";
+import { TextAlignWrapper } from"../utilities/TextAlignWrapper";
 
 const VerifyPage = () => {
   return (

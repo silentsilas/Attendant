@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 
-import { ProgressIndicator } from "./stories/ProgressIndicator";
+import { ProgressIndicator } from"../ProgressIndicator";
 
-import { Header2 } from "./stories/Header2";
+import { Header2 } from"../Header2";
 
-import { Button } from "./stories/Button";
-import { IconArrow } from "./stories/IconArrow";
+import { Button } from"../Button";
+import { IconArrow } from"../IconArrow";
 
-import { Label } from "./stories/Label";
-import { Input } from "./stories/Input";
-import { Select } from "./stories/Select";
+import { Label } from"../Label";
+import { Input } from"../Input";
+import { Select } from"../Select";
 
-import { CenteredContainer } from "./stories/utilities/CenteredContainer";
-import { SpaceBetweenContainer } from "./stories/utilities/SpaceBetweenContainer";
-import { Spacer } from "./stories/utilities/Spacer";
-import { TextAlignWrapper } from "./stories/utilities/TextAlignWrapper";
+import { CenteredContainer } from"../utilities/CenteredContainer";
+import { SpaceBetweenContainer } from"../utilities/SpaceBetweenContainer";
+import { Spacer } from"../utilities/Spacer";
+import { TextAlignWrapper } from"../utilities/TextAlignWrapper";
 
 const SecretCreationPage2 = () => {
   const [recipientInput, setRecipientInput] = useState("");

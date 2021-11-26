@@ -1,14 +1,14 @@
 import React from "react";
 
-import { SplashIconHeader } from "./stories/SplashIconHeader";
+import { SplashIconHeader } from"../SplashIconHeader";
 
-import { Header1 } from "./stories/Header1";
-import { Header3 } from "./stories/Header3";
+import { Header1 } from"../Header1";
+import { Header3 } from"../Header3";
 
-import { Button } from "./stories/Button";
+import { Button } from"../Button";
 
-import { CenteredContainer } from "./stories/utilities/CenteredContainer";
-import { Spacer } from "./stories/utilities/Spacer";
+import { CenteredContainer } from"../utilities/CenteredContainer";
+import { Spacer } from"../utilities/Spacer";
 
 const SplashPage = () => {
   return (
