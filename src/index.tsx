@@ -15,7 +15,7 @@ export * from './stories/InputButtonWithIcon';
 export * from './stories/Label';
 export * from './stories/ProgressIndicator';
 export * from './stories/Select';
-export * as SplashIconHeader from './stories/SplashIconHeader';
+export * from './stories/SplashIconHeader';
 export * from './stories/TextArea';
 export * from './stories/TextAreaParagraph';
 export * from './stories/utilities/CenteredContainer';
