@@ -11,6 +11,7 @@ export * from './stories/Header2';
 export * from './stories/Header3';
 export * from './stories/SplashIconHeader';
 export * from './stories/Icon';
+export * from './stories/IconArrow';
 export * from './stories/Input';
 export * from './stories/InputButtonWithIcon';
 export * from './stories/Label';
