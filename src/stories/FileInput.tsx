@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FC, useRef } from "react";
 import CSS from "csstype";
 
-import { InputButtonWithIcon } from "./InputButtonWithIcon";
+import InputButtonWithIcon from "./InputButtonWithIcon";
 
 export interface FileInputProps {
   style?: CSS.Properties;
@@ -46,4 +46,4 @@ const FileInput: FC<FileInputProps> = ({ style, id, handleFile, value }) => {
   );
 };
 
-export { FileInput };
+export default FileInput;

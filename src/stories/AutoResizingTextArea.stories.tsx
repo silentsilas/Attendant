@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { AutoResizingTextAreaProps } from "./AutoResizingTextArea";
 
-import { AutoResizingTextArea } from "./AutoResizingTextArea";
+import AutoResizingTextArea from "./AutoResizingTextArea";
 
 export default {
   title: "TextAreas/AutoResizingTextArea",

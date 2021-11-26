@@ -1,19 +1,19 @@
 import React from "react";
 
-import { Header2 } from "./stories/Header2";
-import { Header3 } from "./stories/Header3";
+import Header2 from "./stories/Header2";
+import Header3 from "./stories/Header3";
 
-import { Button } from "./stories/Button";
+import Button from "./stories/Button";
 
-import { Label } from "./stories/Label";
-import { InputButtonWithIcon } from "./stories/InputButtonWithIcon";
+import Label from "./stories/Label";
+import InputButtonWithIcon from "./stories/InputButtonWithIcon";
 
-import { TextAreaParagraph } from "./stories/TextAreaParagraph";
+import TextAreaParagraph from "./stories/TextAreaParagraph";
 
-import { CenteredContainer } from "./stories/utilities/CenteredContainer";
-import { SpaceBetweenContainer } from "./stories/utilities/SpaceBetweenContainer";
-import { Spacer } from "./stories/utilities/Spacer";
-import { TextAlignWrapper } from "./stories/utilities/TextAlignWrapper";
+import CenteredContainer from "./stories/utilities/CenteredContainer";
+import SpaceBetweenContainer from "./stories/utilities/SpaceBetweenContainer";
+import Spacer from "./stories/utilities/Spacer";
+import TextAlignWrapper from "./stories/utilities/TextAlignWrapper";
 
 const SecretRevealPage = () => {
   return (

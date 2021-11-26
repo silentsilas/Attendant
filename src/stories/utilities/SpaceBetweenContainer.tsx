@@ -20,7 +20,7 @@ const SpaceBetweenContainer: FC<SpaceBetweenContainerProps> = ({
   );
 };
 
-export { SpaceBetweenContainer };
+export default SpaceBetweenContainer;
 
 const StyledDiv = styled.div<SpaceBetweenContainerProps>`
   display: flex;

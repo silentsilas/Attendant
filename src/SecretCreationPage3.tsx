@@ -1,20 +1,20 @@
 import React from "react";
 
-import { ProgressIndicator } from "./stories/ProgressIndicator";
+import ProgressIndicator from "./stories/ProgressIndicator";
 
-import { Header2 } from "./stories/Header2";
+import Header2 from "./stories/Header2";
 
-import { Button } from "./stories/Button";
-import { IconArrow } from "./stories/IconArrow";
-import { InputButtonWithIcon } from "./stories/InputButtonWithIcon";
+import Button from "./stories/Button";
+import IconArrow from "./stories/IconArrow";
+import InputButtonWithIcon from "./stories/InputButtonWithIcon";
 
-import { Label } from "./stories/Label";
-import { Input } from "./stories/Input";
+import Label from "./stories/Label";
+import Input from "./stories/Input";
 
-import { CenteredContainer } from "./stories/utilities/CenteredContainer";
-import { SpaceBetweenContainer } from "./stories/utilities/SpaceBetweenContainer";
-import { Spacer } from "./stories/utilities/Spacer";
-import { TextAlignWrapper } from "./stories/utilities/TextAlignWrapper";
+import CenteredContainer from "./stories/utilities/CenteredContainer";
+import SpaceBetweenContainer from "./stories/utilities/SpaceBetweenContainer";
+import Spacer from "./stories/utilities/Spacer";
+import TextAlignWrapper from "./stories/utilities/TextAlignWrapper";
 
 const SecretCreationPage3 = () => {
   return (

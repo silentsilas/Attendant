@@ -13,7 +13,7 @@ const Header1: FC<Header1Props> = ({ children, style }) => {
   return <StyledHeader1 style={style}>{children}</StyledHeader1>;
 };
 
-export { Header1 };
+export default Header1;
 
 const StyledHeader1 = styled.h2<Header1Props>`
   margin: 0.7rem auto;

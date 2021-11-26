@@ -89,4 +89,4 @@ const SplashIconHeader = () => {
   );
 };
 
-export { SplashIconHeader };
+export default SplashIconHeader;

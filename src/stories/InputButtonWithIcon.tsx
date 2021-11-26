@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import styled, { css } from "styled-components";
 import CSS from "csstype";
 import { rgba } from "polished";
-import { Icon } from "./Icon";
+import Icon from "./Icon";
 
 import {
   color,
@@ -44,7 +44,7 @@ const InputButtonWithIcon: FC<InputButtonWithIconProps> = ({
   );
 };
 
-export { InputButtonWithIcon };
+export default InputButtonWithIcon;
 
 const StyledDiv = styled.div`
   position: relative;

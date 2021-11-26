@@ -88,7 +88,7 @@ const Icon: FC<IconProps> = ({ style, iconName, onClick }) => {
   );
 };
 
-export { Icon };
+export default Icon;
 
 const StyledSpan = styled.span<IconProps>`
   position: absolute;

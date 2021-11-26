@@ -31,4 +31,4 @@ const ProgressIndicator = ({
   );
 };
 
-export { ProgressIndicator };
+export default ProgressIndicator;

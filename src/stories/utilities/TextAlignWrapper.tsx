@@ -22,7 +22,7 @@ const TextAlignWrapper: FC<TextAlignWrapperProps> = ({
   );
 };
 
-export { TextAlignWrapper };
+export default TextAlignWrapper;
 
 const StyledDiv = styled.div<TextAlignWrapperProps>`
   text-align: ${(props) => props.align};
