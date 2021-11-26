@@ -35,7 +35,7 @@ const Button: FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export { Button };
 
 const StyledButton = styled.button<ButtonProps>`
   border: 0;
