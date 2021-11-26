@@ -18,7 +18,7 @@ const Header3: FC<Header3Props> = ({ children, style, small }) => {
   );
 };
 
-export default Header3;
+export { Header3 };
 
 const StyledHeader3 = styled.h3<Header3Props>`
   font-size: ${(props) =>

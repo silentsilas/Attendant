@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { InputButtonWithIconProps } from "./InputButtonWithIcon";
 
-import InputButtonWithIcon from "./InputButtonWithIcon";
+import { InputButtonWithIcon } from "./InputButtonWithIcon";
 
 export default {
   title: "InputButtonWithIcon",

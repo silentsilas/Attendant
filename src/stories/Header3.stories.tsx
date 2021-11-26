@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Header3Props } from "./Header3";
 
-import Header3 from "./Header3";
+import { Header3 } from "./Header3";
 
 export default {
   title: "Headers/Header3",

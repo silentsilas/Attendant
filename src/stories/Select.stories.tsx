@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { SelectProps } from "./Select";
 
-import Select from "./Select";
+import { Select } from "./Select";
 
 export default {
   title: "Select",

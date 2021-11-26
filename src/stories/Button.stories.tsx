@@ -3,8 +3,8 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { ButtonProps } from "./Button";
 
-import Button from "./Button";
-import IconArrow from "./IconArrow";
+import { Button } from "./Button";
+import { IconArrow } from "./IconArrow";
 
 export default {
   title: "Button",

@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import SplashIconHeader from "./SplashIconHeader";
+import { SplashIconHeader } from "./SplashIconHeader";
 
 export default {
   title: "SVGs/SplashIconHeader",

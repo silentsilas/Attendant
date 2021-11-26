@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { ProgressIndicatorProps } from "./ProgressIndicator";
 
-import ProgressIndicator from "./ProgressIndicator";
+import { ProgressIndicator } from "./ProgressIndicator";
 
 export default {
   title: "SVGs/ProgressIndicator",

@@ -65,4 +65,4 @@ const IconArrow: FC<IconArrowProps> = ({ arrowDirection }) => {
   );
 };
 
-export default IconArrow;
+export { IconArrow };

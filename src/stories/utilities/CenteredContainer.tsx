@@ -24,7 +24,7 @@ const CenteredContainer: FC<CenteredContainerProps> = ({
   );
 };
 
-export default CenteredContainer;
+export { CenteredContainer };
 
 const StyledDiv = styled.div<CenteredContainerProps>`
   height: 100vh;

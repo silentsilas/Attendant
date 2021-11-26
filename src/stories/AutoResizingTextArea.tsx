@@ -60,7 +60,7 @@ const AutoResizingTextArea: FC<AutoResizingTextAreaProps> = ({
   );
 };
 
-export default AutoResizingTextArea;
+export { AutoResizingTextArea };
 
 interface DivProps {
   height: string;

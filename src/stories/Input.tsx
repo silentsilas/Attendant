@@ -48,7 +48,7 @@ const Input: FC<InputProps> = ({
   );
 };
 
-export default Input;
+export { Input };
 
 const StyledInput = styled.input<InputProps>`
   border-radius: ${borderRadius.medium};

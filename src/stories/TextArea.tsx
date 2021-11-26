@@ -36,7 +36,7 @@ const TextArea: FC<TextAreaProps> = ({
   );
 };
 
-export default TextArea;
+export { TextArea };
 
 const StyledTextArea = styled.textarea<TextAreaProps>`
   border-radius: ${borderRadius.medium};

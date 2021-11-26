@@ -18,7 +18,7 @@ const Label: FC<LabelProps> = ({ children, style, htmlFor }) => {
   );
 };
 
-export default Label;
+export { Label };
 
 const StyledLabel = styled.label<LabelProps>`
   color: ${color.white};
