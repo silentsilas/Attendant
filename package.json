@@ -2,7 +2,7 @@
   "name": "@intended/intended-ui",
   "description": "Storybook UI library for Intended Link",
   "license": "MIT",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "private": false,
   "main": "dist/index.js",
   "repository": "https://git.silentsilas.com/Intended/attendant.git",
