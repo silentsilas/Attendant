@@ -8,7 +8,8 @@
   "repository": "https://git.silentsilas.com/Intended/attendant.git",
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env NODE_ENV=production tsc -b",
+    "build": "cross-env NODE_ENV=production tsc -b && tsc --declaration",
+    "pub": "npm version patch --force && npm publish",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
