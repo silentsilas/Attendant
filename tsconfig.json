@@ -19,6 +19,7 @@
     "noEmit": false,
     "noEmitOnError": true,
     "jsx": "react-jsx",
+    "sourceMap": true,
     "outDir": "dist"
   },
   "files": [
