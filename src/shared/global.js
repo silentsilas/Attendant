@@ -9,7 +9,7 @@ export const ibmFontUrl =
 export const robotoFontUrl =
   "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap";
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
   html {
@@ -210,3 +210,5 @@ export const GlobalStyle = createGlobalStyle`
     display: none;
   }
 `;
+
+export { GlobalStyle };
