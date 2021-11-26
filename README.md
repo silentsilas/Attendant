@@ -20,4 +20,4 @@ In your project files, import whichever components you need `import { Icon } fro
 
 `npm run build`
 
-Then run `npm publish --access public` while logged in as an Intended org user.
+Then run `npm run pub` while logged in as an Intended org user.
