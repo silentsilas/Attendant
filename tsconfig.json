@@ -14,10 +14,10 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
-    // "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "moduleResolution": "node",
     "isolatedModules": true,
     "noEmit": false,
+    "noEmitOnError": true,
     "jsx": "react-jsx",
     "outDir": "dist"
   },
