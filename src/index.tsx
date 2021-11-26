@@ -1,7 +1,8 @@
 import * as styles from './shared/styles';
 import * as global from './shared/global';
+import * as SplashIconHeader from './stories/SplashIconHeader';
 
-export { styles, global };
+export { styles, global, SplashIconHeader };
 
 export * from './stories/AutoResizingTextArea';
 export * from './stories/Button';
@@ -15,7 +16,6 @@ export * from './stories/InputButtonWithIcon';
 export * from './stories/Label';
 export * from './stories/ProgressIndicator';
 export * from './stories/Select';
-export * from './stories/SplashIconHeader';
 export * from './stories/TextArea';
 export * from './stories/TextAreaParagraph';
 export * from './stories/utilities/CenteredContainer';
