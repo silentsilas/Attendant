@@ -1,8 +1,8 @@
 import * as styles from './shared/styles';
-import * as GlobalStyle from './shared/global';
 
-export { styles, GlobalStyle };
+export { styles };
 
+export * from './shared/global';
 export * from './stories/AutoResizingTextArea';
 export * from './stories/Button';
 export * from './stories/FileInput';
