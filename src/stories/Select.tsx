@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 import styled from "styled-components";
 import CSS from "csstype";
 
@@ -11,18 +11,17 @@ import {
 } from "../shared/styles";
 
 export interface SelectProps {
+  children: ReactNode | null;
   style?: CSS.Properties;
   id: string;
   value?: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-const Select: FC<SelectProps> = ({ style, id, value = "github", onChange }) => {
+const Select: FC<SelectProps> = ({ children, style, id, value = "github", onChange }) => {
   return (
     <StyledSelect style={style} id={id} value={value} onChange={onChange}>
-      <option value="github">Github</option>
-      <option value="facebook">Facebook</option>
-      <option value="Google">Google</option>
+      { children }
     </StyledSelect>
   );
 };

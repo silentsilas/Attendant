@@ -16,4 +16,10 @@ const Template: ComponentStory<typeof Select> = (args: SelectProps) => (
 );
 
 export const Default = Template.bind({});
-Default.args = { id: "testId" };
+Default.args = { 
+  children: [
+    "<option value='github'>Github</option>",
+    "<option value='facebook'>Facebook</option>"
+  ],
+  id: "testId" 
+};
