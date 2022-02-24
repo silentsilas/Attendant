@@ -1,9 +1,13 @@
 import React from "react";
 import { rgba } from "polished";
-
+import CSS from "csstype";
 import { color, opacity } from "../shared/styles";
 
-const SplashIconHeader = () => {
+export interface SplashIconHeaderProps {
+  style?: CSS.Properties;
+}
+
+const SplashIconHeader = ({ style }: SplashIconHeaderProps) => {
   const bgCircleColor = rgba(color.white, opacity.light);
 
   const dotColor = "#ffffff";
@@ -13,7 +17,7 @@ const SplashIconHeader = () => {
   const r = "60";
 
   return (
-    <svg width="44rem" viewBox="0 0 440 120">
+    <svg width="44rem" viewBox="0 0 440 120" style={style}>
       <circle r={r} cx="60" cy={cy} fill={bgCircleColor} />
       <svg width="51" height="60" viewBox="0 0 51 60" fill="none" x="35" y="30">
         <path
