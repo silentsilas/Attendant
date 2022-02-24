@@ -7,6 +7,7 @@ import { color } from "../../shared/styles";
 interface CenteredContainerProps {
   children: ReactNode | null;
   style?: CSS.Properties;
+  className?: string | undefined;
   fullscreen?: boolean;
   wide?: boolean;
 }
@@ -14,11 +15,12 @@ interface CenteredContainerProps {
 const CenteredContainer: FC<CenteredContainerProps> = ({
   children,
   style,
+  className,
   fullscreen = false,
   wide = false,
 }) => {
   return (
-    <StyledDiv style={style} fullscreen={fullscreen} wide={wide}>
+    <StyledDiv style={style} fullscreen={fullscreen} wide={wide} className={className}>
       {children}
     </StyledDiv>
   );
@@ -27,7 +29,7 @@ const CenteredContainer: FC<CenteredContainerProps> = ({
 export { CenteredContainer };
 
 const StyledDiv = styled.div<CenteredContainerProps>`
-  height: 100vh;
+  height: 100%;
   text-align: center;
 
   display: flex;
@@ -38,7 +40,7 @@ const StyledDiv = styled.div<CenteredContainerProps>`
   ${(props) =>
     props.fullscreen &&
     css`
-      width: 100vw;
+      width: 100%;
       background: linear-gradient(180deg, #060b2e 0%, #051745 100%);
     `}
 

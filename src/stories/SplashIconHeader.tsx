@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { rgba } from "polished";
 import CSS from "csstype";
 import { color, opacity } from "../shared/styles";
@@ -7,7 +7,7 @@ export interface SplashIconHeaderProps {
   style?: CSS.Properties;
 }
 
-const SplashIconHeader = ({ style }: SplashIconHeaderProps) => {
+const SplashIconHeader: FC<SplashIconHeaderProps> = ({ style }) => {
   const bgCircleColor = rgba(color.white, opacity.light);
 
   const dotColor = "#ffffff";
